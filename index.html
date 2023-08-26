@@ -17,9 +17,9 @@
 
 <body >
     <header>
-        <section class="bannerenvio img-fluid">
-            <img src="img/banner_envios.jpeg" alt="Banner Envío"></a>
-        </section>
+        <div class="banner-envio">
+            <img class="info-envio" src="img/banner_envios.jpeg" alt="Banner Envío">
+        </div>
 
         <div class="container-fluid ">
         <!--BARRA DE NAVEGACIÓN-->        
@@ -51,7 +51,7 @@
                                     <li><a class="dropdown-item formato2" href="#">Ropa Interior</a></li>
                                 </ul>
                             </li>
-                            <!--JOYERÍA EN ACERO-->
+                            <!--JOYERIA EN ACERO-->
                             <li class="nav-item dropdown formato">
                                 <a class="nav-link dropdown-toggle" href="pages/joyeria.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     JOYERIA
@@ -118,33 +118,108 @@
     </header>
 
     <main>
-        <div class="destacados" >
-            <div>
-                <h2>PRODUCTOS DESTACADOS!!</h2>
-            </div>
-            <ul class="item-destacados">
-                <li>
+        
+    <h2 class="prod-destacados"><strong>PRODUCTOS DESTACADOS!!</strong></h2>
+    <div class="products-grid">
+        <div class="product-wrapper"> 
+            <div class="product-items"> 
+                <div class="product-item-image">
                     <a href="#">
                         <img src="img/morral_impermeable.jpg" alt="Morral Impermeable Negro">
                     </a>
-                </li>
-                <li> 
-                    <a href="#">
-                        <img src="img/jgo_buhos.jpg" alt="Juego de buhos">
-                    </a>    
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/set_de_pocillos.jpg" alt="Set Pocillos Gato">
-                    </a>                    
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/kaiak_vital_fem.jpg" alt="Kaiak Vital Femenina">
-                    </a>                    
-                </li>
-            </ul>
+                </div>
+                <div class="product-item-info">
+                        <h2>
+                            <strong>MORRAL IMPERMEABLE NEGRO</strong>
+                        </h2>
+                    <div class="item-info-bio">
+                            <h3><strong>COP $85.000</strong></h3>
+                         <h4 id="item-info-sku">
+                            <strong><em>SKU:MI0001</em> </strong>
+                        </h4>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="product-items"> 
+            <div class="product-item-image">
+                <a href="#">
+                    <img src="img/jgo_buhos.jpg" alt="Juego de Buhos en Acero plateado">
+                </a>
+            </div>
+            <div class="product-item-info">
+                    <h2>
+                        <strong>JUEGO DE BUHOS EN ACERO</strong>
+                    </h2>
+                <div class="item-info-bio">
+                       <h3><strong>COP $25.000</strong></h3>
+                    <h4 id="item-info-sku">
+                        <strong><em>SKU:JGO001</em> </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="product-items"> 
+            <div class="product-item-image">
+                <a href="#">
+                    <img src="img/kaiak_vital_fem.jpg" alt="Perfume Kaiak Vital Fem">
+                </a>
+            </div>
+            <div class="product-item-info">
+                <h2>
+                    <strong>KAIAK VITAL FEMENINO</strong>
+                </h2>
+                <div class="item-info-bio">
+                    <h3>
+                        <strong>COP $105.000</strong>
+                    </h3>
+                    <h4 id="item-info-sku">
+                        <strong><em>SKU:KAVIFEM21</em> </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="product-items"> 
+            <div class="product-item-image">
+                <a href="#">
+                    <img src="img/set_de_pocillos.jpg" alt="Set de Pocillo con soporte dibujo gato">
+                </a>
+            </div>
+            <div class="product-item-info">
+                    <h2>
+                        <strong>SET DE POCILLOS CON SOPORTE</strong>
+                    </h2>
+                <div class="item-info-bio">
+                    <h3>
+                        <strong>COP $35.000</strong>
+                    </h3>
+                    <h4 id="item-info-sku">
+                        <strong><em>SKU:JGOPOC001</em> </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="product-items"> 
+            <div class="product-item-image">
+                <a href="#">
+                    <img src="img/PulseraAcero_Corazones_Piedras_Rojas.jpg" alt="PULSERA ACERO CORAZONES Y PIEDRAS ROJAS">
+                </a>
+            </div>
+            <div class="product-item-info">
+                    <h2>
+                        <strong>PULSERA CORAZONES-PIEDRAS ROJAS</strong>
+                    </h2>
+                <div class="item-info-bio">
+                    <h3>
+                        <strong>COP $24.000</strong>
+                    </h3>
+                    <h4 id="item-info-sku">
+                        <strong><em>SKU:P134</em> </strong>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <hr>
 

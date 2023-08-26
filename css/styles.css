@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 /*Color fondo paginas*/
 body {
   min-height: 100vh;
@@ -15,45 +13,156 @@ body {
 
  /*HEADER*/
 
- .bannerenvio {
-    text-align:center;
-    background-color: rgb(159, 249, 118);
-    height: 40px;
+.banner-envio
+ {
+  text-align:center;
+  background-color: rgb(159, 249, 118);
+  height: 40px;
   }
+ 
+ .info-envio
+ {
+  width: 60%;
+ }
 
+ /*Formato para la barra de navegación*/
 
- /*Barra de navegación*/
+ .formato .formato2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .formato {
   font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
 }
 
 .formato2 {
   font-size: 12.5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+  }
 
-.destacados {
-  border: violet 2.5px solid;
-  margin: 10px;
-}
+/*PRODUCTOS DESTACADOS*/
 
-.destacados h2 {
-  font-size: 20px;
+.prod-destacados {
+  font-size: 32px;
   letter-spacing: 1.3px;
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.item-destacados {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: blueviolet;
+.products-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+} 
+
+.product-wrapper {
+  position: relative;
 }
+
+.product-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-items .product-item-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--background);
+  transition: .5s;
+}
+
+.product-item-image img {
+  height: 100%;
+  width: 100%;
+  object-fit:fill;
+}
+
+.product-items:hover img {
+  opacity: 0.4;
+  transition: .5s;
+}
+
+.product-items:hover .product-item-image {
+  transform: translateY(-104px);
+  transition: all .9s;
+}
+
+.product-items:hover .item-info-bio {
+  opacity: 0.9;
+  align-content: center;
+}
+
+.item-info-bio {
+  color: darkblue;
+  margin: 0%;
+}
+
+.item-info-bio h3{
+  font-size: 14px;
+  color: darkblue;
+  margin: 0%;
+}
+
+#item-info-sku{
+  font-size: 12px;
+  color: darkslateblue;
+  margin: 0%;
+}
+
+.product-items:hover  {
+  transition-delay: 0.1s;
+}
+
+.product-items:hover  {
+  transition-delay: 0.2s;
+}
+
+.product-items:hover  {
+  transition-delay: 0.3s;
+}
+
+.product-items:hover{
+  transition-delay: 0.4s;
+}
+
+.product-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: var(--background);
+  width: 100%;
+  height: 104px;
+  padding: 16px;
+  z-index: 1;
+  color: #333;
+  text-align: center;
+}
+
+.product-items:hover .product-item-info {
+  background-color: #fff;
+}
+
+.product-item-info h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
 
 hr {
   border-top: 3px solid rgb(162,210,255);
@@ -111,6 +220,7 @@ hr {
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+
   }
 
   .card:hover {
@@ -201,7 +311,7 @@ font-family: 'Ubuntu', sans-serif;
 .derechos {
   letter-spacing: 1.2px;
   text-align: right;
-  font-size: 11.5px;
+  font-size: 9.5px;
   font-family: 'Ubuntu', sans-serif;
 }
 /*ROPA*/
@@ -308,3 +418,28 @@ font-family: 'Ubuntu', sans-serif;
     display: block;
     padding: 20px;
   }
+
+/*Para tablet que tengan como minimo 460px*/
+@media screen and (max-width: 460px) {
+  body{
+    background-color: burlywood;
+  }
+
+  .banner-envio .info-envio {
+    width: 900px;
+    height: 50px;
+  }
+  
+ .products-grid
+ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  column-gap: 5px;
+  /*grid-template-rows: repeat(2, 1fr);
+  gap: 10px 8px;*/
+
+  
+  }
+ 
+ }
