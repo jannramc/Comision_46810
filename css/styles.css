@@ -482,5 +482,13 @@ font-size: 12px;
   font-size: 8px;
 }
 
+.marco {
+padding: 1rem;
+}
+
+#cont-mensaje {
+  width: 90%;
+
+}
 
 }
