@@ -270,7 +270,7 @@ footer nav h4 {
 #titulo {
   display:flex;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Ubuntu', sans-serif;
   text-align: justify;
 }
@@ -338,14 +338,16 @@ font-family: 'Ubuntu', sans-serif;
 #t-contacto {
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 34px;
   font-family: 'Ubuntu', sans-serif;
-  align-items: center;
+  /*align-items: center;*/
 }
+
 #text-contacto {
   text-align: center;
   font-size: 14px;  
   font-family: 'Ubuntu', sans-serif;
+  margin: 0.5rem;
 }
 .cont-campos, #cont-mensaje{
   font-size: 14px;  
@@ -479,4 +481,6 @@ font-size: 12px;
 .derechos{
   font-size: 8px;
 }
+
+
 }
