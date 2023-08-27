@@ -57,7 +57,7 @@
                                     JOYERIA
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item formato2" href="pages/joyeria.html">Anillo</a></li>
+                                    <li><a class="dropdown-item formato2" href="pages/joyeria.html">Anillos</a></li>
                                     <li><a class="dropdown-item formato2" href="pages/joyeria.html">Aretes y Candongas</a></li>
                                     <li><a class="dropdown-item formato2" href="pages/joyeria.html">Juegos</a></li>
                                     <li><a class="dropdown-item formato2" href="pages/joyeria.html">Pulseras y Cadenas</a></li>
@@ -199,8 +199,8 @@
                 </div>
             </div>
         </div>
-        <div class="product-items"> 
-            <div class="product-item-image">
+        <div class="product-items" id="img-corazon"> 
+            <div class="product-item-image" id="img-corazon">
                 <a href="#">
                     <img src="img/PulseraAcero_Corazones_Piedras_Rojas.jpg" alt="PULSERA ACERO CORAZONES Y PIEDRAS ROJAS">
                 </a>
@@ -228,17 +228,17 @@
         </div>
         <!--Carrusel para OUTLET-->
             <div id="carouselIndicatorsOutlet" class="carousel slide" data-bs-touch="true">
-                <div class="carousel-indicators">
+               <!-- <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselIndicatorsOutlet" data-bs-slide-to="0" class="active img-fluid" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselIndicatorsOutlet" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselIndicatorsOutlet" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="#carouselIndicatorsOutlet" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
+                </div> -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card">
                             <div class="img.wrapper">
-                                <img src="img/Out-Cosmetiquera_en_Kit.jpg" alt="Kit Cosmetiquera Oso Panda">
+                                <img src="img/Out-Cosmetiquera_en_Kit.jpg" class="card-img-top" alt="Kit Cosmetiquera Oso Panda">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Cosmetiquera Oso Panda</h5>
@@ -250,10 +250,10 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="img.wrapper">
-                                <img src="img/Out_Kit_Gatito_Coqueto.jpg" alt="Kit Gatito Coqueto">
+                                <img src="img/Out_Kit_Gatito_Coqueto.jpg" class="card-img-top" alt="Kit Gatito Coqueto">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">kit gatito coqueto</h5>
+                                <h5 class="card-title">Kit Gatito Coqueto</h5>
                                 <p class="c-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Más información</a>
                             </div>
@@ -262,7 +262,7 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="img.wrapper">
-                                <img src="img/Out_Aretes_Ojo_Griego.jpg" alt="Aretes Ojo Griego">
+                                <img src="img/Out_Aretes_Ojo_Griego.jpg" class="card-img-top" alt="Aretes Ojo Griego">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Aretes Ojo Griego</h5>
@@ -274,7 +274,7 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="img.wrapper">
-                                <img src="img/Out_Billetera_Sirena.jpg" alt="Billetera Cola Sirena">
+                                <img src="img/Out_Billetera_Sirena.jpg" class="card-img-top" alt="Billetera Cola Sirena">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Billetera Cola de Sirena</h5>
@@ -305,11 +305,11 @@
 
     <footer>
         <div class="footer-column">
-            <div id="titulo">          
-                <h3>¿necesitas ayuda?</h3>
+            <div>          
+                <h3 id="titulo"><strong>¿Necesitas ayuda?</strong></h3>
             </div>
-            <div>
-                <ul class="items">
+            <div class="opciones">
+                <ul class="lista">
                     <li>
                         <h3>
                             <a href="#"><span>Preguntas frecuentes</span></a>
@@ -328,12 +328,12 @@
                 </ul>
             </div>
             <div>
-                <div id="titulo">
-                    <h3>sobre nosotros</h3>
+                <div>
+                    <h3 id="titulo"> <strong>sobre nosotros</strong></h3>
                 </div>
             </div>
-            <div>
-                <ul class="items">
+            <div class="opciones">
+                <ul class="lista">
                     <li>
                         <h3>
                             <a href="#"><span>¿Quiénes Somos?</span></a>
@@ -346,11 +346,11 @@
                     </li>
                 </ul>
             </div>
-            <div id="titulo">
-                <h3>términos y condiciones</h3>
-            </div>
             <div>
-                <ul  class="items">
+                <h3 id="titulo"><strong>términos y condiciones</strong></h3>
+            </div>
+            <div class="opciones">
+                <ul class="lista">
                     <li>
                         <h3>
                             <a href=""><span>Política de Protección de Datos</span></a>
@@ -358,7 +358,11 @@
                     </li>
                     <li>
                         <h3>
-                            <a href=""><span>Términos y Condiciones</span></a>
+                            <a href="">
+                                <span>
+                                    Términos y Condiciones
+                                </span>
+                            </a>
                         </h3>
                     </li>
                 </ul>
@@ -367,12 +371,12 @@
 
         <div class="redes">
             <div>
-                <img  src="img/medios_de_pago2-re.png" alt="Medios de Pago">
+                <img class="medios" src="img/medios_de_pago2-re.png" alt="Medios de Pago">
             </div>
             
             <div>
                 <h3 id="redes"> 
-                    Siguenos en nuestras Redes
+                    <strong>Siguenos en nuestras Redes</strong>
                 </h3>  
                 <a href="https://www.facebook.com/UvaAnuk/" target="blank">
                     <img class="faceb" src="img/facebook.svg" alt="Logo Facebook">
@@ -389,8 +393,8 @@
             </div>
         </div>
 
-            <section class="derechos">
-                <h6>
+            <section>
+                <h6 class="derechos">
                     Uva Anuk 2023. Derechos reservados
                 </h6>
             </section>

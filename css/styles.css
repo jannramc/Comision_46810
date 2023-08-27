@@ -7,7 +7,7 @@
 
 /*Color fondo paginas*/
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: whitesmoke;
  }
 
@@ -213,14 +213,13 @@ hr {
   }
   
   .card {
-    width: 100%;
-    margin: 20px;
+    width: 350px;
+    padding: 1rem;
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
-
   }
 
   .card:hover {
@@ -233,8 +232,8 @@ hr {
     text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-.card .card-body p
-{
+
+.card .card-body p{
   line-height: 1.5;
   color: black;
 }
@@ -245,10 +244,9 @@ hr {
   text-align: justify;
 }
 
-
 .infotienda h3, #infot, p{
   text-align: center;
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0px;
 }
@@ -272,24 +270,25 @@ footer nav h4 {
 #titulo {
   display:flex;
   text-transform: uppercase;
-  /* flex-direction: row; */
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Ubuntu', sans-serif;
   text-align: justify;
 }
 
-.items {
+.opciones .lista{
   list-style: none;
   align-items:normal;
   text-transform:initial;
-  /* justify-content: left; */
-  font-size: 12px;
-  font-family: 'Ubuntu', sans-serif;
   }
 
-.items li h3 a{
+.opciones li h3 a{
   text-decoration: none;
 }
+.opciones li h3 a span{
+  font-size: 12px;
+font-family: 'Ubuntu', sans-serif;
+}
+
 
 .redes, #redes{
 text-align: right;
@@ -310,10 +309,11 @@ font-family: 'Ubuntu', sans-serif;
 
 .derechos {
   letter-spacing: 1.2px;
-  text-align: right;
-  font-size: 9.5px;
+  text-align: center;
+  font-size: 10.5px;
   font-family: 'Ubuntu', sans-serif;
 }
+
 /*ROPA*/
 .produc {
   margin: 10px;
@@ -364,7 +364,6 @@ font-family: 'Ubuntu', sans-serif;
   border-color:blueviolet;
   border-radius: 5px;
 }
-
 
  /*PAGE GUIA DE TALLAS*/
 
@@ -422,24 +421,62 @@ font-family: 'Ubuntu', sans-serif;
 /*Para tablet que tengan como minimo 460px*/
 @media screen and (max-width: 460px) {
   body{
-    background-color: burlywood;
+    background-color: honeydew;
   }
 
   .banner-envio .info-envio {
-    width: 900px;
+    width: 460px;
     height: 50px;
   }
   
- .products-grid
- {
+ .products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-around;
-  column-gap: 5px;
-  /*grid-template-rows: repeat(2, 1fr);
-  gap: 10px 8px;*/
-
-  
-  }
- 
+  gap: 0.5rem;
+  padding: 1rem;
  }
+ 
+ #img-corazon  {
+  display: none;
+ }
+
+ hr {
+  border-top: 4px solid rgb(76, 167, 251);
+  height: 2px;
+  margin: 1em;
+}
+
+.outlet {
+  width: 440px;
+}
+
+.card{
+  width: 350px;
+  justify-self: center;
+  margin: 3rem;
+}
+
+.footer-column{
+  display: grid;
+}
+
+.medios
+{
+  width: 90%;
+  margin: 1rem;
+}
+
+#titulo{
+font-size: 12px;
+}
+
+.redes
+{ display: grid;
+  gap: 8px;
+  margin: 1rem;
+}
+
+.derechos{
+  font-size: 8px;
+}
+}
